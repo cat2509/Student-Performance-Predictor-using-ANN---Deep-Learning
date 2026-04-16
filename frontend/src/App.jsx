@@ -13,7 +13,7 @@ function App() {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.post('http://localhost:8000/predict/', formData);
+      const response = await axios.post('http://localhost:8001/predict/', formData);
       setResult(response.data);
     } catch (err) {
       console.error("Prediction error:", err);
